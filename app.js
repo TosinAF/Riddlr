@@ -21,7 +21,7 @@ var Riddle = mongoose.model("Riddle");
 
 var app = express();
 //var db = mongoose.connect('mongodb://localhost/Riddlr');
-var db = mongoose.connect('mongodb://nodejitsu:9b291c2b19339cdf6ea45937347c1842@troup.mongohq.com:10043/nodejitsudb8011386150');
+var db = mongoose.connect('');
 
 app.configure(function() {
     app.set('port', process.env.PORT || 3000);
@@ -76,7 +76,7 @@ var congratsEmail = function(email) {
         service: "Gmail",
         auth: {
             user: "tosman9000@gmail.com",
-            pass: "opebino5"
+            pass: ""
         }
     });
     //Send an e-mail using the connection object
